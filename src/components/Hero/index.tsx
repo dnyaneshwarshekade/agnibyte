@@ -15,10 +15,10 @@ const Hero = () => {
                   AgniByte Tech 
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                At AgniByte Tech Pvt Ltd, we are committed to empowering businesses and individuals with high-quality IT solutions that are both 
-                affordable and efficient.
-                Our goal is to provide exceptional web hosting, server management, and multilingual website services
-                All tailored to support your digital growth and success.the industry's standard.
+                  At AgniByte Tech Pvt Ltd, we are committed to empowering businesses and individuals with high-quality IT solutions that are both 
+                  affordable and efficient.
+                  Our goal is to provide exceptional web hosting, server management, and multilingual website services
+                  All tailored to support your digital growth and success.the industry's standard.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
