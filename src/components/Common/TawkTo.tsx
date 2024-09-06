@@ -1,5 +1,6 @@
 // src/components/Common/TawkTo.tsx
-import React, { useEffect } from 'react';
+"use client";
+import { useEffect } from "react";
 
 const TawkTo: React.FC = () => {
   useEffect(() => {

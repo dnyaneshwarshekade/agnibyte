@@ -6,7 +6,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
-import TawkTo from '../components/Common/TawkTo'; // Adjust the path as needed
+import  from "@/components/Common"; // Adjust the path as needed
 
 const inter = Inter({ subsets: ["latin"] });
 
