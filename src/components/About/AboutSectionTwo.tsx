@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+
 const AboutSectionTwo = () => {
   return (
     <section className="py-16 md:py-20 lg:py-28">
@@ -28,26 +29,29 @@ const AboutSectionTwo = () => {
             <div className="max-w-[470px]">
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Bug-Free Code
+                  Bug free code
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  At AgniByte Tech Pvt Ltd, we prioritize delivering reliable and efficient solutions. Our team is dedicated to ensuring that every line of code we write is thoroughly tested and optimized to meet the highest quality standards. We are committed to providing you with software that performs seamlessly and meets your business needs with precision.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Premier Support
+                  Premier support
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  We offer premier support to ensure that your technical infrastructure operates smoothly. Our expert team provides prompt and effective assistance to resolve any issues that may arise, helping you maintain uninterrupted service and achieve your business goals. Your satisfaction is our top priority, and we are here to support you every step of the way.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt.
                 </p>
               </div>
               <div className="mb-1">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Comprehensive Language Support
+                  Next.js
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  At AgniByte Tech Pvt Ltd, we offer expertise in a wide range of programming languages and technologies. Whether you need solutions built with JavaScript, Python, Java, PHP, Ruby, or any other language, our team has the skills and experience to deliver high-quality, tailored solutions to meet your specific needs. We are dedicated to using the best tools and technologies to ensure your project&apos;s success.
+                  Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
+                  consectetur adipiscing elit setim.
                 </p>
               </div>
             </div>
