@@ -1,8 +1,5 @@
 // components/Team/index.tsx
-import React from 'react';
 import TeamMember from './TeamMember';
-import { teamData } from './teamData';
-
 const Team: React.FC = () => {
   return (
     <section className="team">
