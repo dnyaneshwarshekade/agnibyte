@@ -1,4 +1,4 @@
-// components/Team/TeamMember.tsx
+/*components/Team/TeamMember.tsx
 import React from 'react';
 import { TeamMember } from '../../types/team';
 
@@ -16,4 +16,4 @@ const TeamMember: React.FC<Props> = ({ member }) => {
   );
 };
 
-export default TeamMember;
+export default TeamMember; */

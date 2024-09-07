@@ -1,4 +1,4 @@
-// components/Team/teamData.tsx
+/*components/Team/teamData.tsx
 import { TeamMember } from '../../types/team';
 
 export const teamData: TeamMember[] = [
@@ -21,4 +21,4 @@ export const teamData: TeamMember[] = [
     imageUrl: '/images/team/charlie.jpg'
   },
   // Add more team members as needed
-];
+]; */

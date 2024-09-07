@@ -1,4 +1,4 @@
-// app/team/team.tsx (or wherever you want to display it)
+/* app/team/team.tsx (or wherever you want to display it)
 import React from 'react';
 import Team from '../../components/Team';
 
@@ -11,4 +11,4 @@ const TeamPage: React.FC = () => {
   );
 };
 
-export default TeamPage;
+export default TeamPage;*/

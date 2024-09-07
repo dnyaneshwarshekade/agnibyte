@@ -1,4 +1,4 @@
-// components/Team/index.tsx
+/* components/Team/index.tsx
 import TeamMember from './TeamMember';
 const Team: React.FC = () => {
   return (
@@ -13,4 +13,4 @@ const Team: React.FC = () => {
   );
 };
 
-export default Team;
+export default Team;*/
