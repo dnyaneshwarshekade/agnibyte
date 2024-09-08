@@ -8,36 +8,40 @@ const Hero = () => {
         className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
       >
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
-              <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                AgniByte Tech 
-                </h1>
-                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Our services include web hosting, server management, and more. It&apos;s all about keeping your digital presence secure and reliable.
-                      Don&apos;t hesitate to contact us for any queries.we&apos;re here to help with your IT needs.
-                  </p>
-                
+  <div className="-mx-4 flex flex-wrap">
+    <div className="w-full px-4">
+      <div className="mx-auto max-w-[800px] text-center">
+        <h1 
+          className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight animate-fade-in-up"
+        >
+          AgniByte Tech
+        </h1>
+        <p 
+          className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl animate-fade-in-up delay-200"
+        >
+          Our services include web hosting, server management, and more. It's all about keeping your digital presence secure and reliable.
+          Don't hesitate to contact us for any queries. We're here to help with your IT needs.
+        </p>
 
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  <Link
-                    href="agni-byte.com"
-                    className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
-                  >
-                    🔥 Get Pro
-                  </Link>
-                  <Link
-                    href="https://github.com/agnibyte"
-                    className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
-                  >
-                    Star on GitHub
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+          <Link 
+            href="#" 
+            className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 animate-bounce-in"
+          >
+            About Us
+          </Link>
+          <Link 
+            href="#" 
+            className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5 animate-bounce-in delay-200"
+          >
+            Our Open Source Projects
+          </Link>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
         <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="450"
