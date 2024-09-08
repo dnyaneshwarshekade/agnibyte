@@ -52,7 +52,7 @@ export const teamData: TeamType[] = [
     id: 6,
     name: "Laksh Chaudary",
     designation: "Co Founder @ ****",
-    image: "/images/team/team-6.jpg",
+    image: "/images/team/team-6.png",
     facebookLink: "/#",
     twitterLink: "/#",
     instagramLink: "/#",
