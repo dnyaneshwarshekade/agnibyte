@@ -7,4 +7,5 @@ export interface TeamType {
   facebookLink: string;
   twitterLink: string;
   instagramLink: string;
+
 }

@@ -226,7 +226,7 @@ const Footer = () => {
               </a>{" "}
               and{" "}
               <a
-                href="https://dnyaneshwarshekade@github.io"
+                href="https://dnyaneshwarshekade.github.io"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary"

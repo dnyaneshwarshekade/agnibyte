@@ -1,4 +1,6 @@
-// components/Team/teamData.ts
+// Author: Dnyaneshwar Shekade
+// Website: www.dnyaneshwarshekade.github.io
+
 import { TeamType } from '@/types/team';
 
 export const teamData: TeamType[] = [
@@ -47,7 +49,6 @@ export const teamData: TeamType[] = [
     twitterLink: "/#",
     instagramLink: "/#",
   },
-
   {
     id: 6,
     name: "Laksh Chaudary",
@@ -57,5 +58,4 @@ export const teamData: TeamType[] = [
     twitterLink: "/#",
     instagramLink: "/#",
   },
-  
 ];
