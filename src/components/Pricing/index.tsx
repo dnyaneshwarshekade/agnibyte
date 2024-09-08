@@ -21,7 +21,7 @@ const Pricing = () => {
           <div className="mb-8 flex justify-center md:mb-12 lg:mb-16">
             <span
               onClick={() => setIsMonthly(true)}
-              className={`${
+              className={`₹{
                 isMonthly
                   ? "pointer-events-none text-primary"
                   : "text-dark dark:text-white"
@@ -36,7 +36,7 @@ const Pricing = () => {
               <div className="relative">
                 <div className="h-5 w-14 rounded-full bg-[#1D2144] shadow-inner"></div>
                 <div
-                  className={`${
+                  className={`₹{
                     isMonthly ? "" : "translate-x-full"
                   } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
                 >
@@ -46,7 +46,7 @@ const Pricing = () => {
             </div>
             <span
               onClick={() => setIsMonthly(false)}
-              className={`${
+              className={`₹{
                 isMonthly
                   ? "text-dark dark:text-white"
                   : "pointer-events-none text-primary"
