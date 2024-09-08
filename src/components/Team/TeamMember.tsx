@@ -1,5 +1,5 @@
-// components/Team/TeamMember.tsx
 import React from 'react';
+import Image from 'next/image'; // Import Image from 'next/image'
 import { TeamType } from '@/types/team';
 
 interface TeamMemberProps {
@@ -9,7 +9,15 @@ interface TeamMemberProps {
 const TeamMember: React.FC<TeamMemberProps> = ({ member }) => {
   return (
     <div className="team-member px-4 py-6">
-      <img src={member.image} alt={member.name} className="w-full h-auto rounded-full" />
+      <div className="image-container relative w-32 h-32">
+        <Image
+          src={member.image}
+          alt={member.name}
+          layout="fill" // Use layout="fill" with a container
+          objectFit="cover" // Apply object-fit through CSS
+          className="rounded-lg" // Apply rounded corners through class
+        />
+      </div>
       <h3 className="mt-4 text-lg font-semibold">{member.name}</h3>
       <p className="text-sm text-gray-600">{member.designation}</p>
       <div className="social-links mt-2">

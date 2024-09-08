@@ -17,10 +17,10 @@ const Hero = () => {
           AgniByte Tech
         </h1>
         <p 
-          className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl animate-fade-in-up delay-200"
-        >
-          Our services include web hosting, server management, and more. It's all about keeping your digital presence secure and reliable.
-          Don't hesitate to contact us for any queries. We're here to help with your IT needs.
+        className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl animate-fade-in-up delay-200"
+          >
+        Our services include web hosting, server management, and more. It&apos;s all about keeping your digital presence secure and reliable.
+        Don&apos;t hesitate to contact us for any queries. We&apos;re here to help with your IT needs.
         </p>
 
         <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
