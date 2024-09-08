@@ -1,7 +1,11 @@
-import { useState } from "react";
-import emailjs from "emailjs-com";
-import NewsLatterBox from "./NewsLatterBox";
+// src/components/Contact/index.tsx
+'use client';
 
+import { useState } from 'react';
+import emailjs from 'emailjs-com';
+import NewsLatterBox from './NewsLatterBox';
+
+// Your component logic here
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
