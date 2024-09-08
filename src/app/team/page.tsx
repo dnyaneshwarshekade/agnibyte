@@ -8,7 +8,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Meet Our Team | AgniByte Tech',
   description: 'Learn more about the talented individuals behind AgniByte Tech.',
-  // other metadata
+  // other metadata//
 };
 
 const TeamPage: React.FC = () => {
