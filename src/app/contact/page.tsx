@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Agnibyte - Emporing your Buisness Journey ",
-  description: "Agnibyte Tech",
+  description: "Agnibyte Tech Contact page",
   // other metadata
 };
 
@@ -14,7 +14,7 @@ const ContactPage = () => {
     <>
       <Breadcrumb
         pageName="Contact Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="Contact us if you need any prouct support"
       />
 
       <Contact />
