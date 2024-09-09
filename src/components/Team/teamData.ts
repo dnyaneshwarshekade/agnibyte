@@ -34,7 +34,7 @@ export const teamData: TeamType[] = [
   {
     id: 4,
     name: "Vijay Gudil",
-    designation: "Co Founder @ Marketing Head",
+    designation: "Co Founder & Marketing Head",
     image: "/images/team/team-4.jpg",
     facebookLink: "/#",
     twitterLink: "/#",
@@ -43,7 +43,7 @@ export const teamData: TeamType[] = [
   {
     id: 5,
     name: "Deepak Metkari",
-    designation: "Co Founder @ ****",
+    designation: "Co Founder & ****",
     image: "/images/team/team-5.jpg",
     facebookLink: "/#",
     twitterLink: "/#",
@@ -52,7 +52,7 @@ export const teamData: TeamType[] = [
   {
     id: 6,
     name: "Laksh Chaudary",
-    designation: "Co Founder @ ****",
+    designation: "Co Founder & ****",
     image: "/images/team/team-6.png",
     facebookLink: "/#",
     twitterLink: "/#",

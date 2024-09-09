@@ -27,8 +27,7 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                   At AgniByte Tech Pvt Ltd, we are committed to empowering businesses and individuals with high-quality IT solutions that are 
-                  both affordable and efficient.<br />
+                   AgniByte Tech Pvt Ltd<br />
                   Address:<br />
                   Maharashtra Nagar, Mankhurd, Mumbai 400088
 </p>
