@@ -57,16 +57,16 @@ const ContactUsBox = () => {
         We're available on social media. Connect with us!
       </p>
       <div className="flex space-x-4">
-        <a href="https://facebook.com" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
+        <a href="#" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
           <Image src="/path/to/facebook-icon.svg" alt="Facebook" width={24} height={24} />
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
+        <a href="#" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
           <Image src="/path/to/twitter-icon.svg" alt="Twitter" width={24} height={24} />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
+        <a href="#" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
           <Image src="/path/to/linkedin-icon.svg" alt="LinkedIn" width={24} height={24} />
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
+        <a href="#" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
           <Image src="/path/to/instagram-icon.svg" alt="Instagram" width={24} height={24} />
         </a>
       </div>
