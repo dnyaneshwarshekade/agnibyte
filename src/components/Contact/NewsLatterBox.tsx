@@ -57,16 +57,16 @@ const ContactUsBox = () => {
         We&rsquo;re available on social media. Connect with us!
       </p>
       <div className="flex space-x-4">
-        <a href="#" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
+        <a href="https://facebook.com/AgniByte" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
           <Image src="/images/contactus/facebook.svg" alt="Facebook" width={24} height={24} />
         </a>
-        <a href="#" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
+        <a href="https://x.com/AgniByte" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
           <Image src="/images/contactus/twitter.svg" alt="Twitter" width={24} height={24} />
         </a>
-        <a href="#" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
+        <a href="https://linkedin.com/AgniByte" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
           <Image src="/images/contactus/linkedin.svg" alt="LinkedIn" width={24} height={24} />
         </a>
-        <a href="#" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
+        <a href="https://instagram.com/AgniByte" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
           <Image src="/images/contactus/instagram.svg" alt="Instagram" width={24} height={24} />
         </a>
       </div>
