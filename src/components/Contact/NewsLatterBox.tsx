@@ -16,13 +16,13 @@ const ContactUsBox = () => {
       </p>
       <div>
         <div className="mb-5 flex items-center">
-          <Image src="/path/to/sales-icon.svg" alt="Email Icon" width={24} height={24} className="mr-3" />
+          <Image src="/images/contactus/mail.svg" alt="Email Icon" width={24} height={24} className="mr-3" />
           <a href="mailto:sales@agni-byte.com" className="text-base text-body-color dark:text-body-color-dark hover:underline">
             sales@agni-byte.com
           </a>
         </div>
         <div className="mb-5 flex items-center">
-          <Image src="/path/to/phone-icon.svg" alt="Phone Icon" width={24} height={24} className="mr-3" />
+          <Image src="/images/contactus/flagindia.svg" alt="Phone Icon" width={24} height={24} className="mr-3" />
           <a href="tel:+917039997894" className="text-base text-body-color dark:text-body-color-dark">
             (+91) 7039997894
           </a>
@@ -37,13 +37,13 @@ const ContactUsBox = () => {
       </p>
       <div>
         <div className="mb-5 flex items-center">
-          <Image src="/path/to/location-icon.svg" alt="Location Icon" width={24} height={24} className="mr-3" />
+          <Image src="/images/contactus/flagindia.svg" alt="Location Icon" width={24} height={24} className="mr-3" />
           <span className="text-base text-body-color dark:text-body-color-dark">
             Maharashtra Nagar, Mankhurd, Mumbai 400088
           </span>
         </div>
         <div className="mb-5 flex items-center">
-          <Image src="/path/to/clock-icon.svg" alt="Clock Icon" width={24} height={24} className="mr-3" />
+          <Image src="/images/contactus/clock.svg" alt="Clock Icon" width={24} height={24} className="mr-3" />
           <span className="text-base text-body-color dark:text-body-color-dark">
             Mon-Sat: 9:00-18:00
           </span>
@@ -58,16 +58,16 @@ const ContactUsBox = () => {
       </p>
       <div className="flex space-x-4">
         <a href="#" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
-          <Image src="/path/to/facebook-icon.svg" alt="Facebook" width={24} height={24} />
+          <Image src="/images/contactus/facebook.svg" alt="Facebook" width={24} height={24} />
         </a>
         <a href="#" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
-          <Image src="/path/to/twitter-icon.svg" alt="Twitter" width={24} height={24} />
+          <Image src="/images/contactus/twitter.svg" alt="Twitter" width={24} height={24} />
         </a>
         <a href="#" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
-          <Image src="/path/to/linkedin-icon.svg" alt="LinkedIn" width={24} height={24} />
+          <Image src="/images/contactus/linkedin.svg" alt="LinkedIn" width={24} height={24} />
         </a>
         <a href="#" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
-          <Image src="/path/to/instagram-icon.svg" alt="Instagram" width={24} height={24} />
+          <Image src="/images/contactus/instagram.svg" alt="Instagram" width={24} height={24} />
         </a>
       </div>
     </div>
