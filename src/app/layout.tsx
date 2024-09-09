@@ -26,7 +26,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <ScrollToTop />
-          <TawkTo /> {/* Add the TawkTo component here */}
+          <TawkTo /> 
         </Providers>
       </body>
     </html>
