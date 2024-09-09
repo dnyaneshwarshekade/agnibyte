@@ -33,7 +33,7 @@ const ContactUsBox = () => {
         Visit Us
       </h3>
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-        Let’s discuss your idea. Visit us at:
+        Let&rsquo;s discuss your idea. Visit us at:
       </p>
       <div>
         <div className="mb-5 flex items-center">
@@ -54,7 +54,7 @@ const ContactUsBox = () => {
         Follow Us
       </h3>
       <p className="mb-11 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-        We're available on social media. Connect with us!
+        We&rsquo;re available on social media. Connect with us!
       </p>
       <div className="flex space-x-4">
         <a href="#" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
