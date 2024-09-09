@@ -1,55 +1,99 @@
+import SingleBlog from "@/components/Blog/SingleBlog";
+import blogData from "@/components/Blog/blogData";
+import Breadcrumb from "@/components/Common/Breadcrumb";
 
-// app/blog/page.tsx
-
-import { fetchPosts } from '../../services/ghostService';
-import { Post } from '../../types/blog';
-import { useEffect, useState } from 'react';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Agnibyte - Emporing your Buisness Journey ",
-  description: "Agnibyte Tech BLogs",
+  title: "Blog Page | Free Next.js Template for Startup and SaaS",
+  description: "This is Blog Page for Startup Nextjs Template",
   // other metadata
 };
 
+const Blog = () => {
+  return (
+    <>
+      <Breadcrumb
+        pageName="Blog Grid"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+      />
 
-const BlogPage = () => {
-    const [posts, setPosts] = useState<Post[]>([]);
-    const [loading, setLoading] = useState(true);
+      <section className="pb-[120px] pt-[120px]">
+        <div className="container">
+          <div className="-mx-4 flex flex-wrap justify-center">
+            {blogData.map((blog) => (
+              <div
+                key={blog.id}
+                className="w-full px-4 md:w-2/3 lg:w-1/2 xl:w-1/3"
+              >
+                <SingleBlog blog={blog} />
+              </div>
+            ))}
+          </div>
 
-    useEffect(() => {
-        const getPosts = async () => {
-            try {
-                const posts = await fetchPosts();
-                setPosts(posts);
-            } catch (error) {
-                console.error(error);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        getPosts();
-    }, []);
-
-    if (loading) {
-        return <p>Loading...</p>;
-    }
-
-    return (
-        <div>
-            <h1>Blog</h1>
-            <div>
-                {posts.map((post) => (
-                    <div key={post.id}>
-                        <h2>{post.title}</h2>
-                        <p>{post.excerpt}</p>
-                        <a href={`/blog/${post.id}`}>Read more</a>
-                    </div>
-                ))}
+          <div className="-mx-4 flex flex-wrap" data-wow-delay=".15s">
+            <div className="w-full px-4">
+              <ul className="flex items-center justify-center pt-8">
+                <li className="mx-1">
+                  <a
+                    href="#0"
+                    className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
+                  >
+                    Prev
+                  </a>
+                </li>
+                <li className="mx-1">
+                  <a
+                    href="#0"
+                    className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
+                  >
+                    1
+                  </a>
+                </li>
+                <li className="mx-1">
+                  <a
+                    href="#0"
+                    className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
+                  >
+                    2
+                  </a>
+                </li>
+                <li className="mx-1">
+                  <a
+                    href="#0"
+                    className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
+                  >
+                    3
+                  </a>
+                </li>
+                <li className="mx-1">
+                  <span className="flex h-9 min-w-[36px] cursor-not-allowed items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color">
+                    ...
+                  </span>
+                </li>
+                <li className="mx-1">
+                  <a
+                    href="#0"
+                    className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
+                  >
+                    12
+                  </a>
+                </li>
+                <li className="mx-1">
+                  <a
+                    href="#0"
+                    className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
+                  >
+                    Next
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-    );
+      </section>
+    </>
+  );
 };
 
-export default BlogPage;
+export default Blog;
