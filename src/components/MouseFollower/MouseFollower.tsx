@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BiBot } from 'react-icons/bi'; // Import cute robot icon
+import { TbRobot } from "react-icons/tb";
 import styles from './MouseFollower.module.css';
 
 const MouseFollower: React.FC = () => {
@@ -20,7 +20,7 @@ const MouseFollower: React.FC = () => {
       className={styles.robotFollower}
       style={{ left: position.x, top: position.y }}
     >
-      <BiBot size={50} className={styles.robotIcon} /> {/* Use BiBot icon */}
+      <TbRobot size={50} className={styles.robotIcon} /> {/* Use BiBot icon */}
     </div>
   );
 };
