@@ -4,7 +4,7 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Agnibyte - Emporing your Buisness Journey ",
+  title: "Agnibyte - Contact Page",
   description: "Agnibyte Tech Contact page",
   // other metadata
 };
