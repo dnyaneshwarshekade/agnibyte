@@ -1,4 +1,3 @@
-//Author Dnyaneshwar Shekade www.dnyaneshwarshekade.github.io
 import React from 'react';
 import TeamMember from '@/components/Team/TeamMember';
 import Breadcrumb from '@/components/Common/Breadcrumb';
@@ -20,7 +19,9 @@ const TeamPage: React.FC = () => {
         description="Meet the dedicated professionals who drive the innovation and success of AgniByte Tech. Each team member brings unique skills and a shared vision for excellence in IT solutions."
       />
       <div className="team-page bg-gray-100 dark:bg-gray-900">
-        <h1>Meet Our Team</h1>
+        <h1 className="text-4xl font-bold text-gray-900 dark:text-white animate-fade-in-up">
+          Meet Our Team
+        </h1>
         <div className="team-list bg-gray-100 dark:bg-gray-900">
           {teamData.map(member => (
             <TeamMember key={member.id} member={member} />
