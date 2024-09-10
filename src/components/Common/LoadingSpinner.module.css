@@ -1,0 +1,72 @@
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1a202c; /* Dark background */
+}
+
+.laptopContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.laptopIcon {
+  font-size: 4rem;
+  color: #ffffff; /* Laptop icon color */
+  animation: laptopBounce 2s infinite ease-in-out;
+}
+
+.codeLines {
+  position: absolute;
+  top: -20px;
+  right: -60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.codeLine {
+  width: 60px;
+  height: 8px;
+  background-color: #ff7b00; /* Code line color */
+  margin: 4px 0;
+  border-radius: 4px;
+  animation: typing 1.5s infinite ease-in-out;
+}
+
+@keyframes typing {
+  0%, 40% {
+    width: 0;
+  }
+  100% {
+    width: 60px;
+  }
+}
+
+.logoText {
+  font-size: 3rem;
+  color: #00bfff;
+  font-weight: bold;
+  margin-top: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes laptopBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
