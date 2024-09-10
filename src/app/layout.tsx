@@ -1,4 +1,4 @@
-// app/layout.tsx
+// /app/layout.tsx
 "use client";
 
 import Footer from "@/components/Footer";
@@ -7,7 +7,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
-import TawkTo from "@/components/Common/TawkTo"; // Import the TawkTo component
+import TawkTo from "@/components/Common/TawkTo";
 import { Providers } from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,7 +26,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <ScrollToTop />
-          <TawkTo /> 
+          <TawkTo />
         </Providers>
       </body>
     </html>
