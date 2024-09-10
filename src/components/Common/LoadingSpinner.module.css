@@ -1,4 +1,5 @@
-/* Global CSS or CSS Module */
+/* Add this to your global CSS file or Tailwind config */
+
 @keyframes blink {
   0% {
     opacity: 1;
@@ -8,26 +9,17 @@
   }
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
 .animate-blink {
   animation: blink 1s step-start infinite;
 }
 
 .code-lines {
-  color: #ff9100; /* Orange for the text */
+  color: #ff9100; /* Adjust as needed */
   font-family: 'Courier New', Courier, monospace;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid #ff9100; /* Add a border-right for the cursor effect */
-  padding-right: 10px; /* Space for the blinking cursor */
+  border-right: 2px solid #ff9100; /* Cursor effect */
+  padding-right: 10px;
 }
 
 .line {
