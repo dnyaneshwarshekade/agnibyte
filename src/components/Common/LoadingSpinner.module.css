@@ -1,72 +1,38 @@
-.loadingContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #1a202c; /* Dark background */
-}
-
-.laptopContainer {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.laptopIcon {
-  font-size: 4rem;
-  color: #ffffff; /* Laptop icon color */
-  animation: laptopBounce 2s infinite ease-in-out;
-}
-
-.codeLines {
-  position: absolute;
-  top: -20px;
-  right: -60px;
-  display: flex;
-  flex-direction: column;
-}
-
-.codeLine {
-  width: 60px;
-  height: 8px;
-  background-color: #ff7b00; /* Code line color */
-  margin: 4px 0;
-  border-radius: 4px;
-  animation: typing 1.5s infinite ease-in-out;
+/* Global CSS or CSS Module */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes typing {
-  0%, 40% {
+  from {
     width: 0;
   }
-  100% {
-    width: 60px;
+  to {
+    width: 100%;
   }
 }
 
-.logoText {
-  font-size: 3rem;
-  color: #ff9100;
-  font-weight: bold;
-  margin-top: 20px;
-  animation: fadeIn 2s ease-in-out;
+.animate-blink {
+  animation: blink 1s step-start infinite;
 }
 
-@keyframes laptopBounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+.code-lines {
+  color: #ff9100; /* Orange for the text */
+  font-family: 'Courier New', Courier, monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #ff9100; /* Add a border-right for the cursor effect */
+  padding-right: 10px; /* Space for the blinking cursor */
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.line {
+  display: inline-block;
+  animation: typing 3s steps(30, end) infinite, blink 0.75s step-start infinite;
+  margin: 0;
+  padding: 0;
 }
