@@ -1,3 +1,5 @@
+//Auther - Dnyaneshwar Shekade www.dnyaneshwarshekade.github.io
+
 import { Technology } from "@/types/technology";
 import technologiesData from "./technologiesData";
 

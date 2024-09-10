@@ -1,3 +1,5 @@
+//Auther - Dnyaneshwar Shekade www.dnyaneshwarshekade.github.io
+
 import { useState, useEffect } from 'react';
 import { TbRobot } from "react-icons/tb";
 import styles from './MouseFollower.module.css';
@@ -11,8 +13,21 @@ const MouseFollower: React.FC = () => {
       setPosition({ x: event.clientX - delay, y: event.clientY - delay });
     };
 
+    const handleTouchMove = (event: TouchEvent) => {
+      const delay = 25; // Adjust delay if needed
+      if (event.touches.length > 0) {
+        const touch = event.touches[0];
+        setPosition({ x: touch.clientX - delay, y: touch.clientY - delay });
+      }
+    };
+
     window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    window.addEventListener('touchmove', handleTouchMove);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('touchmove', handleTouchMove);
+    };
   }, []);
 
   return (
@@ -20,7 +35,7 @@ const MouseFollower: React.FC = () => {
       className={styles.robotFollower}
       style={{ left: position.x, top: position.y }}
     >
-      <TbRobot size={50} className={styles.robotIcon} /> {/* Use BiBot icon */}
+      <TbRobot size={50} className={styles.robotIcon} />
     </div>
   );
 };
