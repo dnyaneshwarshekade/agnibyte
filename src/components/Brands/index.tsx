@@ -1,16 +1,15 @@
-import { Brand } from "@/types/brand";
-import Image from "next/image";
-import brandsData from "./brandsData";
+import { Technology } from "@/types/technology";
+import technologiesData from "./technologiesData";
 
-const Brands = () => {
+const Technologies = () => {
   return (
     <section className="pt-16">
       <div className="container">
-        <div className="-mx-4 flex flex-wrap">
+        <div className="flex flex-wrap -mx-4">
           <div className="w-full px-4">
-            <div className="flex flex-wrap items-center justify-center rounded-sm bg-gray-light px-8 py-8 dark:bg-gray-dark sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]">
-              {brandsData.map((brand) => (
-                <SingleBrand key={brand.id} brand={brand} />
+            <div className="flex flex-wrap items-center justify-center rounded-sm bg-gray-light px-4 py-8 dark:bg-gray-dark sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-16">
+              {technologiesData.map((tech) => (
+                <SingleTechnology key={tech.id} technology={tech} />
               ))}
             </div>
           </div>
@@ -20,21 +19,21 @@ const Brands = () => {
   );
 };
 
-export default Brands;
+export default Technologies;
 
-const SingleBrand = ({ brand }: { brand: Brand }) => {
-  const { href, image, imageLight, name } = brand;
+const SingleTechnology = ({ technology }: { technology: Technology }) => {
+  const { href, icon: Icon, name } = technology;
 
   return (
-    <div className="flex w-1/2 items-center justify-center px-3 py-[15px] sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6">
+    <div className="flex items-center justify-center px-3 py-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6">
       <a
         href={href}
         target="_blank"
         rel="nofollow noreferrer"
-        className="relative h-10 w-full opacity-70 transition hover:opacity-100 dark:opacity-60 dark:hover:opacity-100"
+        className="flex items-center opacity-70 transition hover:opacity-100 dark:opacity-60 dark:hover:opacity-100"
       >
-        <Image src={imageLight} alt={name} fill className="hidden dark:block" />
-        <Image src={image} alt={name} fill className="block dark:hidden" />
+        <Icon className="text-2xl mr-2" />
+        <span className="text-base sm:text-lg font-medium">{name}</span>
       </a>
     </div>
   );
