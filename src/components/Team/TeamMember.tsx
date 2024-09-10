@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { TeamType } from '@/types/team';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa'; // Import SVG icons
+import { FaFacebookF, FaInstagram, FaGithub, FaLink } from 'react-icons/fa'; // Import necessary SVG icons
 
 interface TeamMemberProps {
   member: TeamType;
@@ -37,14 +37,24 @@ const TeamMember: React.FC<TeamMemberProps> = ({ member }) => {
               <FaFacebookF size={20} />
             </a>
           )}
-          {member.twitterLink && (
+          {member.websiteLink && (
             <a
-              href={member.twitterLink}
+              href={member.websiteLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-400 dark:text-blue-300 hover:text-blue-600 dark:hover:text-blue-200"
+              className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200"
             >
-              <FaTwitter size={20} />
+              <FaLink size={20} />
+            </a>
+          )}
+          {member.githubLink && (
+            <a
+              href={member.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200"
+            >
+              <FaGithub size={20} />
             </a>
           )}
           {member.instagramLink && (
