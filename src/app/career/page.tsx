@@ -1,16 +1,22 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import CareerForm from "@/components//Career/CareerForm";
+import CareerForm from "@/components/Career/CareerForm";
 import { Metadata } from "next";
 import { fetchJobPosts } from "@/lib/fetchJobPosts";
 
 export const metadata: Metadata = {
   title: "Agnibyte - Career Opportunities",
   description: "Explore exciting career opportunities at Agnibyte Tech Pvt Ltd",
-  // other metadata
 };
 
 const CareerPage = async () => {
-  const jobPosts = await fetchJobPosts(); // Fetch job posts
+  let jobPosts = [];
+
+  try {
+    jobPosts = await fetchJobPosts(); // Fetch job posts
+  } catch (error) {
+    console.error('Error fetching job posts:', error);
+    // Optionally, you can set jobPosts to a default value or show an error message
+  }
 
   return (
     <>

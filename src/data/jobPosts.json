@@ -1,19 +1,19 @@
 [
   {
-    "title": "Frontend Developer",
+    "title": "Frontend Developer Intern",
     "location": "Remote",
-    "description": "We are looking for a skilled frontend developer with experience in React and Tailwind CSS.",
+    "description": "We are looking for a skilled frontend developer  in React and Tailwind CSS.",
     "id": 1
   },
   {
-    "title": "Backend Developer",
+    "title": "Backend Developer Intern",
     "location": "Remote",
-    "description": "Seeking a backend developer experienced in Node.js, Express, and MongoDB.",
+    "description": "Seeking a backend developer fresher in Node.js, Express, and MongoDB.",
     "id": 2
   },
   {
-    "title": "DevOps Engineer",
-    "location": "On-site/Remote",
+    "title": "DevOps Engineer Intern",
+    "location": "Remote",
     "description": "Join our team as a DevOps engineer with expertise in cloud infrastructure and automation.",
     "id": 3
   }
