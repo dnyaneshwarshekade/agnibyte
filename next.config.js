@@ -7,7 +7,7 @@ const nextConfig = {
         protocol: "https",
         hostname: "agni-byte.com",
         port: "",
-        pathname: "/public/images", // Matches all paths on agni-byte.com
+        //pathname: "/public/images", // Matches all paths on agni-byte.com
       },
     ],
   },
