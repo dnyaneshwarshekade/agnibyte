@@ -13,7 +13,7 @@ const LoadingScreen: React.FC = () => {
           animate={{ opacity: [0, 1, 0] }}
           transition={{ duration: 1.2, repeat: Infinity }}
         >
-          <div>Connecting to AgniByte Server...</div>
+          <div>Connecting to AgniByte...</div>
           <div className="relative inline-block">
             <span className="absolute bottom-0 right-0 h-4 w-1 bg-orange-500 animate-blink"> </span>
           </div>
@@ -35,7 +35,7 @@ const LoadingScreen: React.FC = () => {
       {/* Code Lines Animation */}
       <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
         <div className="code-lines">
-          <div className="line">Connecting to AgniByte...</div>
+          <div className="line">Loading......</div>
         </div>
       </div>
     </div>
