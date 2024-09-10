@@ -1,4 +1,3 @@
-// src/components/Contact/index.tsx
 'use client';
 
 import { useState } from 'react';
@@ -17,21 +16,21 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submissionStatus, setSubmissionStatus] = useState("");
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     emailjs
       .send(
-        "service_hwazdoc", // Replace with your EmailJS service ID
-        "template_yh0usi9", // Replace with your EmailJS template ID
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID_CONTACT as string,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID_CONTACT as string,
         formData,
-        "znjqESE0zbacVRTYs" // Replace with your EmailJS user ID
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID_CONTACT as string
       )
       .then(
         (result) => {
@@ -59,10 +58,7 @@ const Contact = () => {
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
-            <div
-              className="mb-12 rounded-sm bg-white px-8 py-11 shadow-three dark:bg-gray-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
-              data-wow-delay=".15s"
-            >
+            <div className="mb-12 rounded-sm bg-white px-8 py-11 shadow-three dark:bg-gray-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]" data-wow-delay=".15s">
               <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
                 Need help with IT solutions for your business? Fill Out Form!
               </h2>
@@ -179,13 +175,15 @@ const Contact = () => {
                       {isSubmitting ? "Submitting..." : "Submit"}
                     </button>
                   </div>
+                  <div className="w-full px-4">
+                    {submissionStatus && (
+                      <p className="mt-4 text-center text-sm font-medium text-red-600">
+                        {submissionStatus}
+                      </p>
+                    )}
+                  </div>
                 </div>
               </form>
-              {submissionStatus && (
-                <div className="mt-4 text-center text-base font-medium text-body-color">
-                  {submissionStatus}
-                </div>
-              )}
             </div>
           </div>
           <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
