@@ -12,7 +12,6 @@ import "../styles/index.css";
 import TawkTo from "@/components/Common/TawkTo";
 import { Providers } from "./providers";
 import LoadingScreen from "@/components/Common/LoadingScreen";
-import MouseFollower from "@/components/MouseFollower/MouseFollower"; // Import MouseFollower
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome CSS
 
 const inter = Inter({ subsets: ["latin"] });
@@ -45,11 +44,9 @@ export default function RootLayout({
               <Footer />
               <ScrollToTop />
               <TawkTo />
-              <MouseFollower /> {/* Add MouseFollower here */}
             </>
           )}
           {/* Optionally, add MouseFollower here */}
-          <MouseFollower />
         </Providers>
       </body>
     </html>
