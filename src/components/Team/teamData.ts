@@ -56,7 +56,7 @@ export const teamData: TeamType[] = [
   },
   {
     id: 6,
-    name: "Laksh Chaudary",
+    name: "Laxmikant Pal",
     designation: "Co Founder & ****",
     image: "/images/team/team-6.png",
     facebookLink: "/#",
