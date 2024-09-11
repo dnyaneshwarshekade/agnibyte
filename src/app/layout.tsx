@@ -44,9 +44,9 @@ export default function RootLayout({
               <Footer />
               <ScrollToTop />
               <TawkTo />
+              {/* Integrate MouseFollower */}
             </>
           )}
-          {/* Optionally, add MouseFollower here */}
         </Providers>
       </body>
     </html>
