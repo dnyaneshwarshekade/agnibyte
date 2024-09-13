@@ -1,13 +1,21 @@
-import { BlogPost } from '../../types/blog'; // Adjusted import path
+// src/components/Blog/BlogPost.tsx
 
-const BlogPostDetail = ({ post }: { post: BlogPost }) => {
+interface BlogPostProps {
+  title: string;
+  subtitle?: string;
+  content: string;
+  // Add other props as needed
+}
+
+const BlogPost: React.FC<BlogPostProps> = ({ title, subtitle, content }) => {
   return (
-    <div className="blog-post-detail">
-      <h1>{post.title}</h1>
-      <img src={post.coverImage.url} alt={post.title} />
-      <div>{post.content.json}</div>
+    <div>
+      <h1>{title}</h1>
+      {subtitle && <h2>{subtitle}</h2>}
+      <div>{content}</div>
+      {/* Render other properties as needed */}
     </div>
   );
 };
 
-export default BlogPostDetail;
+export default BlogPost;
