@@ -10,14 +10,7 @@ export const metadata: Metadata = {
 };
 
 const BlogPage = async () => {
-  let posts: BlogPost[] = [];
 
-  try {
-    posts = await fetchBlogPosts(); // Fetch blog posts
-  } catch (error) {
-    console.error('Error fetching blog posts from Contentful:', error);
-    // Optionally, you can set posts to a default value or show an error message
-  }
 
   return (
     <>
@@ -38,11 +31,7 @@ const BlogPage = async () => {
           {/* Blog Listings */}
           <div className="flex-1">
             <div className="space-y-6">
-              {posts.length > 0 ? (
-                <BlogList posts={posts} />
-              ) : (
-                <p className="text-center text-gray-600 dark:text-gray-400">No blog posts available at the moment.</p>
-              )}
+             
             </div>
           </div>
         </div>
