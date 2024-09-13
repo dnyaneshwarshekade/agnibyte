@@ -1,32 +1,45 @@
 // src/lib/contenful.ts
+import { createClient, Entry } from 'contentful';
 
-export interface BlogPost extends EntrySkeletonType {
-  fields: {
-    title: string;
-    subtitle?: string;
-    slug: string;
-    author?: string;
-    publishedDate: string;
-    featuredImage: string;
-    content: string;
-    description?: string;
-    coverImage?: string;
-    date?: string;
-    relatedBlogPosts?: string[];
-  };
+// Define the BlogPostFields to match your Contentful model
+export interface BlogPostFields {
+  title: string;
+  slug: string;
+  content: string;
+  // Add other fields as necessary
 }
 
-export async function fetchBlogPostBySlug(slug: string): Promise<BlogPost | null> {
-  const response = await client.getEntries<BlogPost>({
-    content_type: 'blogPost',
-    'fields.slug': slug,
-  });
+export type BlogPost = Entry<BlogPostFields>;
 
-  if (response.items.length > 0) {
-    return response.items[0] as BlogPost;
-  } else {
-    return null;
+// Initialize Contentful client
+const client = createClient({
+  space: process.env.CONTENTFUL_SPACE_ID!,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN!,
+});
+
+// Fetch all blog posts
+export async function fetchBlogPosts(): Promise<BlogPost[]> {
+  try {
+    const response = await client.getEntries<BlogPost>({
+      content_type: 'blogPost', // Ensure this matches your Contentful content model
+    });
+    return response.items;
+  } catch (error) {
+    console.error('Error fetching blog posts:', error);
+    return [];
   }
 }
 
-// Ensure you export other functions or types as needed
+// Fetch a blog post by slug
+export async function fetchBlogPostBySlug(slug: string): Promise<BlogPost | undefined> {
+  try {
+    const response = await client.getEntries<BlogPost>({
+      content_type: 'blogPost',
+      'fields.slug': slug,
+    });
+    return response.items[0];
+  } catch (error) {
+    console.error('Error fetching blog post by slug:', error);
+    return undefined;
+  }
+}
