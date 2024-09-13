@@ -1,7 +1,4 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import BlogList from "@/components/Blog/index"; // Adjust import path
-import { fetchBlogPosts } from '@/lib/contenful'; // Adjust import path
-import { BlogPost } from '@/types/blog'; // Adjust import path
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
