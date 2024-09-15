@@ -1,3 +1,4 @@
+//Auther - Dnyaneshwar Shekade www.dnyaneshwarshekade.github.io
 import { Testimonial } from "@/types/testimonial";
 import SectionTitle from "../Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
@@ -5,28 +6,28 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    name: "Akshay More",
+    designation: "Founder @lifecare medical",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "They are providing best websites, I had get their servicves and they are amezing ",
     image: "/images/testimonials/auth-01.png",
     star: 5,
   },
   {
     id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
+    name: "Vikas Kurade",
+    designation: "Shop Owner ",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "They had provide me a E-commerce website and its a amazing a budget friendly",
     image: "/images/testimonials/auth-02.png",
     star: 5,
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    name: "Macchindra Garje",
+    designation: "Owner of Shreeganesha Medical",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "They has provided a best CMS for my Medical billng and its working Great",
     image: "/images/testimonials/auth-03.png",
     star: 5,
   },

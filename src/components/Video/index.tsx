@@ -3,14 +3,13 @@
 import Image from "next/image";
 import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
-
 import ModalVideo from "react-modal-video";
 
 const Video = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <section className="relative z-10 py-16 md:py-20 lg:py-28">
+    <section className="relative z-10 py-16 md:py-20 lg:py-28 bg-gray-100 dark:bg-gray-900">
       <div className="container">
         <SectionTitle
           title="We are ready to help"
@@ -22,24 +21,29 @@ const Video = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div
-              className="mx-auto max-w-[770px] overflow-hidden rounded-md"
+              className="mx-auto max-w-[770px] overflow-hidden rounded-lg shadow-lg"
               data-wow-delay=".15s"
             >
-              <div className="relative aspect-[77/40] items-center justify-center">
-                <Image src="/images/video/video.jpg" alt="video image" fill />
-                <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
+              <div className="relative aspect-video">
+                <Image
+                  src="/images/video/video.jpg"
+                  alt="video thumbnail"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
                   <button
-                    aria-label="video play button"
+                    aria-label="Play video"
                     onClick={() => setOpen(true)}
-                    className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white bg-opacity-75 text-primary transition hover:bg-opacity-100"
+                    className="flex items-center justify-center w-16 h-16 bg-red-600 text-white rounded-full shadow-md transform transition-transform duration-300 hover:scale-110 hover:shadow-lg focus:outline-none"
                   >
                     <svg
-                      width="16"
-                      height="18"
-                      viewBox="0 0 16 18"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
                       className="fill-current"
                     >
-                      <path d="M15.5 8.13397C16.1667 8.51888 16.1667 9.48112 15.5 9.86602L2 17.6603C1.33333 18.0452 0.499999 17.564 0.499999 16.7942L0.5 1.20577C0.5 0.43597 1.33333 -0.0451549 2 0.339745L15.5 8.13397Z" />
+                      <path d="M5 3v18l15-9L5 3z" />
                     </svg>
                   </button>
                 </div>
@@ -51,8 +55,7 @@ const Video = () => {
 
       <ModalVideo
         channel="youtube"
-        autoplay={true}
-        start={true}
+        autoplay
         isOpen={isOpen}
         videoId="5agZcMuMW-o"
         onClose={() => setOpen(false)}

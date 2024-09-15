@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import Image from 'next/image';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaClock, FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa'; // Import icons
 
 const ContactUsBox = () => {
   const { theme } = useTheme();
@@ -16,13 +16,13 @@ const ContactUsBox = () => {
       </p>
       <div>
         <div className="mb-5 flex items-center">
-          <Image src="/images/contactus/mail.svg" alt="Email Icon" width={24} height={24} className="mr-3" />
+          <FaEnvelope size={24} className="mr-3 text-body-color dark:text-body-color-dark" />
           <a href="mailto:sales@agni-byte.com" className="text-base text-body-color dark:text-body-color-dark hover:underline">
             sales@agni-byte.com
           </a>
         </div>
         <div className="mb-5 flex items-center">
-          <Image src="/images/contactus/flagindia.svg" alt="Phone Icon" width={24} height={24} className="mr-3" />
+          <FaPhone size={24} className="mr-3 text-body-color dark:text-body-color-dark" />
           <a href="tel:+917039997894" className="text-base text-body-color dark:text-body-color-dark">
             (+91) 7039997894
           </a>
@@ -37,13 +37,13 @@ const ContactUsBox = () => {
       </p>
       <div>
         <div className="mb-5 flex items-center">
-          <Image src="/images/contactus/flagindia.svg" alt="Location Icon" width={24} height={24} className="mr-3" />
+          <FaMapMarkerAlt size={24} className="mr-3 text-body-color dark:text-body-color-dark" />
           <span className="text-base text-body-color dark:text-body-color-dark">
             Maharashtra Nagar, Mankhurd, Mumbai 400088
           </span>
         </div>
         <div className="mb-5 flex items-center">
-          <Image src="/images/contactus/clock.svg" alt="Clock Icon" width={24} height={24} className="mr-3" />
+          <FaClock size={24} className="mr-3 text-body-color dark:text-body-color-dark" />
           <span className="text-base text-body-color dark:text-body-color-dark">
             Mon-Sat: 9:00-18:00
           </span>
@@ -57,17 +57,17 @@ const ContactUsBox = () => {
         We&rsquo;re available on social media. Connect with us!
       </p>
       <div className="flex space-x-4">
-        <a href="#" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
-          <Image src="/images/contactus/facebook.svg" alt="Facebook" width={24} height={24} />
+        <a href="https://facebook.com/AgniByte" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
+          <FaFacebookF size={24} className="text-blue-600 dark:text-blue-400" />
         </a>
-        <a href="#" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
-          <Image src="/images/contactus/twitter.svg" alt="Twitter" width={24} height={24} />
+        <a href="https://x.com/AgniByte" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
+          <FaTwitter size={24} className="text-blue-400 dark:text-blue-300" />
         </a>
-        <a href="#" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
-          <Image src="/images/contactus/linkedin.svg" alt="LinkedIn" width={24} height={24} />
+        <a href="https://linkedin.com/AgniByte" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
+          <FaLinkedinIn size={24} className="text-blue-600 dark:text-blue-400" />
         </a>
-        <a href="#" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
-          <Image src="/images/contactus/instagram.svg" alt="Instagram" width={24} height={24} />
+        <a href="https://instagram.com/AgniByte" target="_blank" rel="noreferrer" className="transition-transform transform hover:scale-110">
+          <FaInstagram size={24} className="text-pink-500 dark:text-pink-300" />
         </a>
       </div>
     </div>

@@ -1,15 +1,11 @@
-type Author = {
-  name: string;
-  image: string;
-  designation: string;
-};
-
-export type Blog = {
-  id: number;
+// src/types/blog.ts
+export interface BlogPostFields {
   title: string;
-  paragraph: string;
-  image: string;
-  author: Author;
-  tags: string[];
-  publishDate: string;
+  slug: string;
+  content: string;
+  // Add other fields as necessary
+}
+
+export type BlogPost = {
+  fields: BlogPostFields;
 };

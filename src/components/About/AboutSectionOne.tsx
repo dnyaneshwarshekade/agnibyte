@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
+import { motion } from "framer-motion";
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -18,7 +20,13 @@ const AboutSectionOne = () => {
   );
 
   return (
-    <section id="about" className="pt-16 md:pt-20 lg:pt-28">
+    <motion.section
+      id="about"
+      className="pt-16 md:pt-20 lg:pt-28"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
       <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
@@ -68,7 +76,7 @@ const AboutSectionOne = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
